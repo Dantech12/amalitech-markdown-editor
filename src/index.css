@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+.sidebar {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 800px) {
+
+.sidebar .new-button {
+  cursor: pointer;
+  border: 2px ;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  color: white;
+  background-color: #E46643;
+  height: 50px;
+  width: 15rem;
+  margin-bottom: 31px;
+}
+
+.editor textarea {
+  min-width: 100%;
+  overflow: auto;
+  height: 100%;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  resize: none;
+  font-weight: 500;
+  font-size: 17px;
+  outline: none;
+
+
+}
+
+.preview {
+
+  flex: 1;
+  overflow-y: auto;
+  font-family: "Roboto Slab", serif;
+  padding: 0px 13px 0px 13px;
+  border-left: 0.1px solid white;
+  font-weight: lighter;
+
+
+}
+}
+
+.sidebar button:hover {
+  background-color: #F39765;
+}
+
+
+
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.sidebar li span {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar li span:hover {
+  color: none;
+}
+
+.sidebar li button {
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+.editor-preview {
+  display: flex;
+  
+  flex: 1;
+}
+
+
+
+.editor {
+  flex: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 4px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.default .sidebar {
+  background:#1D1F22;
+}
+
+.default .editor-preview {
+  background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+

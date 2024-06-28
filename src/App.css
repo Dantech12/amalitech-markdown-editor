@@ -1,0 +1,738 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+ 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#35393F;
+  color: white;
+  z-index: 1;
+  height: 100px;
+  width: 100vw;
+}
+
+.navbar-logo {
+  height: 40px;
+}
+.doc-logo{
+  margin-right: 4px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+
+.doc_name{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+}
+.doc-name {
+  font-size: 12px;
+  color: #7C8187;
+}
+
+.button_logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  
+ }
+
+ 
+
+ .button_logo button:hover{
+ background-color: #E46643;
+ }
+
+.button_logo h1{
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  font-family:"Roboto Slab", serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+input.current-doc{
+  background:none;
+  border: none;
+  outline: none;
+  display: flex;
+  font-family:"Roboto Slab", serif ;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input.current-doc:focus{
+  border-bottom: 1px solid white;
+
+}
+
+.info span{
+  color:#7C8187 ;
+}
+
+.label-doc h1{
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 30px;
+  display: flex;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.nav-buttons button{
+  height: 57px;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+
+}
+
+.nav-buttons .save-icon:hover{
+  cursor: pointer;
+  background-color: #F39765;
+}
+
+
+
+
+
+.nav-buttons button {
+  margin: 0 0.5rem;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: #1D1F22;
+  padding-right: 18rem ;
+  overflow-y: auto;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar ul {
+  list-style: none;
+  overflow-y: auto;
+  height: 70%;
+  width: 100vw;
+}
+
+.sidebar ul::-webkit-scrollbar{
+  width: 0px;
+}
+
+
+.sidebar li {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.document-info {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+.document_info {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.document-name:hover {
+  font-weight: bold;
+  color: #E46643;
+}
+
+.document-name {
+  color: white;
+  font-size: 17px;
+  width: 20rem;
+  margin-top: 6px;
+}
+
+.doc1{
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-direction: column;
+  width: 15rem;
+  margin-top: 23px;
+}
+
+.document-date {
+  width: 7rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.label-doc{
+  margin-bottom: 31px;
+}
+
+.label-doc span{
+  font-family:"Roboto Slab", serif;
+  color: #7C8187;
+  font-size: 17px;
+
+}
+
+
+.new-button {
+  font-size: 17px;
+  margin-bottom: 1rem;
+
+}
+
+
+
+@media (min-width:900px) {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .button_logo button{
+    background-color: #35393F;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0px 3rem;
+   }
+}
+
+.editor-preview {
+  
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+ padding: 0;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+.preview-button {
+  align-self: flex-end;
+}
+
+.pages {
+  display: flex;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  
+  overflow: hidden;
+}
+
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
+.preview::-webkit-scrollbar{
+  width: 0px;
+}
+
+.save-icon{
+  justify-content: center;
+  background-color: #E46643;
+  width: 11rem;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  align-items: center;
+  display: flex;
+}
+.save-icon img{
+ margin-right: 12px;
+}
+
+.editor-wrapper, .preview-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.page-label {
+  color: #7C8187;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.preview  li,p{
+  color: #7C8187;
+  font-weight: bold;
+}
+
+.preview p{
+  font-size: 14px;
+}
+
+.preview ul li::marker{
+  color: #E46643;
+}
+
+.preview h6{
+  color: #E46643;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+.preview h1{
+  color: #35393F;
+  font-weight: bold;
+  font-size: 32px;
+
+}
+
+.preview h2{
+  color: #35393F;
+  font-weight: lighter;
+  font-size: 28px;
+
+}
+
+.preview h3{
+  color: #35393F;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.preview h4{
+  color: #35393F;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.preview h5{
+  color: #35393F;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+.preview code{
+  color: #35393F;
+  font-size: 16px;
+}
+
+.preview a{
+  color: #7C8187;
+}
+
+.preview pre{
+  background-color: white
+  ;
+    padding: 1.5rem;
+    border-left-width: 4px;
+    border-radius: .125rem;
+}
+
+.preview blockquote{
+  color: #35393F;
+  background-color: white;
+    padding: 1.5rem;
+    border-left-width: 4px;
+    border-left:4px solid orangered;
+    border-radius: .125rem;
+}
+
+
+
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(165, 159, 159, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prompt {
+  background-color:#151619;
+  color: white;
+  padding: 0px 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.modal p{
+  color: white;
+}
+.confirm{
+height: 50px;
+color: white;
+font-size: 15px;
+font-family: "Roboto Slab", serif;
+background-color: #E46643;
+border: none;
+border-radius: 6px;
+width: 100%;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+
+.trash-icon, .trash-icon:hover{
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.app.default {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+
+
+
+
+/* App.css */
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: auto; 
+  width: 13rem;
+}
+
+.theme-toggle-checkbox {
+  display: none;
+}
+
+.theme-toggle-label {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  margin: 0px 11px 0px 11px;
+  border-radius: 50px;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.show{
+  margin: 0px 12px 0px 12px;
+}
+
+.theme-toggle-label .theme-toggle-inner {
+  display: none;
+}
+
+.theme-toggle-label .theme-toggle-switch {
+  width: 23px;
+  height: 23px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: left 0.2s;
+}
+
+
+
+.theme-toggle-checkbox:checked + .theme-toggle-label .theme-toggle-switch {
+  left: 26px;
+  
+}
+
+/* Dark theme styles */
+.app.dark .editor textarea {
+  background-color: #151619;
+  color: #C1C4CB;
+}
+
+.app.dark .page-label {
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  background-color: #1D1F22;
+  color: #7C8187;
+}
+
+.app.dark .preview {
+  background-color: #151619;
+  color: #7C8187;
+  
+}
+
+.app.dark .preview h2{
+  color: white;
+  font-weight: lighter;
+  font-size: 28px;
+  
+  }
+
+  .app.dark .preview h3{
+    color: white;
+    font-size: 24px;
+
+    
+    }
+
+    .app.dark .preview h4{
+      color: white;
+      font-size: 20px;
+
+      
+      }
+
+      .app.dark .preview h5{
+        color: white;
+        font-size: 16px;
+
+        
+        }
+
+        .app.dark .preview h1{
+          color: white;
+          font-size: 32px;
+
+          
+          }
+
+.app.dark .preview code{
+  color: white;
+  font-size: 16px;
+}
+
+
+.app.dark .sidebar {
+  background-color:#1D1F22;
+}
+
+.app.dark blockquote {
+  background-color: #2B2D31;
+  
+}
+
+.app.dark blockquote p {
+  color: white;
+  
+}
+.app.dark blockquote a {
+  color: white;
+  
+}
+
+.app.dark pre {
+  background-color: #2B2D31;
+}
+
+.app.dark .navbar {
+  background-color:#35393F;
+}
+
+.preview-button-markdown{
+  display: none;
+}
+
+@media (max-width:798px ){
+  .button_logo button{
+    background-color: #35393F;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0px 1rem;
+   }
+  
+
+  .sidebar{
+   padding-right: 15rem;
+   display: flex;
+   justify-content: center;
+  }
+
+  .save-icon span{
+    display: none;
+  }
+
+  .save-icon{
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  
+
+  .button_logo h1{
+   display: none;
+  }
+
+  
+
+  .sidebar .new-button {
+    cursor: pointer;
+    border: 2px ;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    color: white;
+    background-color: #E46643;
+    height: 50px;
+    width: 13rem;
+    margin-bottom: 31px;
+  }
+
+  .sidebar h1{
+    display: block;
+  }
+.pages{
+  display: flex;
+  flex-direction: column;
+}
+  
+.preview-button-markdown{
+  display: block;
+}
+
+.editor textarea{
+  height: 100vh;
+  resize: none;
+width: 99vw;
+
+}
+
+.preview {
+
+  flex: 1;
+  background: #fff;
+  overflow-y: visible;
+  font-family: "Roboto Slab", serif;
+  padding: 0px 13px 0px 13px;
+  border-left: 0.1px solid white;
+
+
+}
+
+.page-label{
+  width: 100vw;
+}
+
+.editor-wrapper, .preview-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow:auto;
+}
+
+.content-wrapper {
+    display: block;
+    flex-direction: column;
+    flex: 1;
+   
+  }
+
+  .editor-preview.full-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-buttons{
+    width: 0;
+  }
+  .info span{
+    font-size: 13px;
+  }
+
+ input.current-doc{
+  font-size: 13px;
+ }
+
+ .navbar{
+  height:60px;
+ }
+
+  
+}
+
+
+
+
+
